@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-project(project_perry_moveit_config)
+project(umrt-project-perry-moveit-config)
 
 find_package(ament_cmake REQUIRED)
 

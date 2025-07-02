@@ -3,5 +3,5 @@ from moveit_configs_utils.launches import generate_setup_assistant_launch
 
 
 def generate_launch_description():
-    moveit_config = MoveItConfigsBuilder("project_perry", package_name="project_perry_moveit_config").to_moveit_configs()
+    moveit_config = MoveItConfigsBuilder("project_perry", package_name="umrt-project-perry-moveit-config").to_moveit_configs()
     return generate_setup_assistant_launch(moveit_config)
