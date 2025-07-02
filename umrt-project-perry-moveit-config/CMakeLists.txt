@@ -4,7 +4,7 @@ project(umrt-project-perry-moveit-config)
 find_package(ament_cmake REQUIRED)
 
 # Parse version number from the file
-file(READ "../version" version_input)
+file(READ "version" version_input)
 string(REGEX MATCH "([0-9]+)\.([0-9]+)\.([0-9]+)" _ ${version_input})
 
 # Fill version number into package.xml

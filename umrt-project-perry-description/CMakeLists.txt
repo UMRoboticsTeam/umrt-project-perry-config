@@ -21,7 +21,7 @@ foreach(Dependency IN ITEMS ${THIS_PACKAGE_INCLUDE_DEPENDS})
 endforeach()
 
 # Parse version number from the file
-file(READ "../version" version_input)
+file(READ "version" version_input)
 string(REGEX MATCH "([0-9]+)\.([0-9]+)\.([0-9]+)" _ ${version_input})
 
 # Fill version number into package.xml

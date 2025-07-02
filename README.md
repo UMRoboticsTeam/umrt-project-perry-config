@@ -9,6 +9,8 @@ For example, if a URDF is changed, that would affect the ros2_control configurat
 If each of these lived in separate repos, that is 4 PRs to create, 4 new versions which have to be deployed, and if one doesn't get updated somewhere it will cause major problems.
 Thus, by organising these into a monorepo this is condensed to 1 PR, and 1 version to deploy/manage.
 
+One unusual technique used in this project, which is used to avoid complicating the ros-build workflow with additional parameters, is to symlink the version file into each of the packages.
+
 # UMRT Project Perry Description
 
 This is the URDF and RViz files for the Project Perry robotics arm model.
