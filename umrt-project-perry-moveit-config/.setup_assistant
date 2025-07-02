@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: umrt-arm-ros-firmware
+    relative_path: urdf/project_perry.urdf.xacro
+  srdf:
+    relative_path: config/project_perry.srdf
+  package_settings:
+    author_name: Noah Reeder
+    author_email: noahreederatc@gmail.com
+    generated_timestamp: 1750822039
+  control_xacro:
+    command:
+      - velocity
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - velocity
+    state:
+      - position
+      - velocity
