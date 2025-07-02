@@ -1,25 +1,10 @@
-# UMRT ROS Template
-ROS project repository template for the University of Manitoba Robotics Team.
+# UMRT Project Perry Config
+Monorepo of ROS packages for configuring the University of Manitoba Robotics Team's software to work with Project Perry.
 
-New projects should be **forked** from this repo (not using this as a template, as that prevents template changes from
-trickling down). Each new project must:
-1. Fill in missing fields in package.in.xml
-2. Fill in project name in CMakeLists.txt and Doxyfile
-3. Go into `umrt-build` package settings and give the new repo read permission
-4. Go into `umrt-apt-image` package settings and give the new repo read permission
-5. Go into `UMRoboticsTeam` organisation secrets and add the new repo to:
-   - `APT_DEPLOY_KEY`
-   - `APT_SIGNING_KEY`
-6. Copy the rulesets (branch protection rules) from a mature repository like
-   [umrt-arm-firmware-lib](https://github.com/UMRoboticsTeam/umrt-arm-firmware-lib/)
-7. Remove this notice and fill in below README template
-8. Write something in mainpage.dox
-9. Replace example files with real code, add source files to CMake targets, document it with Doxygen, and proceed
+Unlike most UMRT projects, this one deviates from the norm of one-package-per-repo.
+This is because of how tightly coupled the packages here are.
+Whenever a change is made to one config, it is likely to propagate into other configs, which becomes tedious to manage when they are all individually controlled and versioned.
 
----
-# Project Name
-
-This library/executable/project implements XYZ functionality for the University of Manitoba Robotics Team's 
-rover/robotic arm.
-
-[See the documentation](https://umroboticsteam.github.io/********** project-name **********/)
+For example, if a URDF is changed, that would affect the ros2_control configuration, the IKFast configuration, and the MoveIt configuration.
+If each of these lived in separate repos, that is 4 PRs to create, 4 new versions which have to be deployed, and if one doesn't get updated somewhere it will cause major problems.
+Thus, by organising these into a monorepo this is condensed to 1 PR, and 1 version to deploy/manage.
