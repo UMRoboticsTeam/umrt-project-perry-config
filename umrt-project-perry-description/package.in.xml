@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>umrt-project-perry-description</name>
+  <version>@version_input@</version> <!-- Version number parsed from version file, replaced here by CMake -->
+  <description>Package with URDF and description files for Project Perry of the University of Manitoba Robotics Team.</description>
+
+  <maintainer email="noahreederatc@gmail.com">Noah Reeder</maintainer>
+
+  <license>MPLv2</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
