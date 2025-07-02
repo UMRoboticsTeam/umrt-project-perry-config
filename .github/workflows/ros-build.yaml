@@ -12,9 +12,6 @@ jobs:
       contents: write
       packages: read
 
-    defaults:
-      run:
-        working-directory: ./umrt-project-perry-description
 
     uses: UMRoboticsTeam/umrt-ci-cd/.github/workflows/ros-build.yaml@main
     with:
