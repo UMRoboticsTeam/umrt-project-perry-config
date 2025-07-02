@@ -45,4 +45,16 @@ ament_export_dependencies(pluginlib)
 ament_export_dependencies(rclcpp)
 ament_export_dependencies(tf2_kdl)
 ament_export_dependencies(tf2_eigen)
+
+# Parse version number from the file
+file(READ "../version" version_input)
+string(REGEX MATCH "([0-9]+)\.([0-9]+)\.([0-9]+)" _ ${version_input})
+
+# Fill version number into package.xml
+configure_file(
+        package.in.xml
+        ${CMAKE_CURRENT_SOURCE_DIR}/package.xml
+        @ONLY
+)
+
 ament_package()
