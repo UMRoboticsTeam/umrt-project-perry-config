@@ -3,8 +3,7 @@ name: Build packages
 on:
   push:
     branches:
-      #- main TODO: Switch back
-      - initial-configs
+      - main
 
 jobs:
   build-description:
