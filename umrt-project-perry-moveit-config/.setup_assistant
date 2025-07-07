@@ -1,6 +1,6 @@
 moveit_setup_assistant_config:
   urdf:
-    package: umrt-arm-ros-firmware
+    package: umrt-project-perry-description
     relative_path: urdf/project_perry.urdf.xacro
   srdf:
     relative_path: config/project_perry.srdf
