@@ -1,0 +1,7 @@
+# Default initial positions for project_perry's ros2_control fake system
+
+initial_positions:
+  base_pitch_joint: 0
+  base_yaw_joint: 0
+  elbow_0_joint: 0
+  gripper: 0

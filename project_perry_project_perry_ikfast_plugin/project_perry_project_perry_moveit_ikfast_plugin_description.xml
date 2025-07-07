@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library path="project_perry_project_perry_moveit_ikfast_plugin">
+  <class name="project_perry_project_perry/IKFastKinematicsPlugin" type="project_perry_project_perry::IKFastKinematicsPlugin" base_class_type="kinematics::KinematicsBase">
+    <description>IKFast61 plugin for closed-form kinematics of project_perry project_perry</description>
+  </class>
+</library>

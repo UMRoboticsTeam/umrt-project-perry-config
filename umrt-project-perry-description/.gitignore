@@ -1,0 +1,5 @@
+/cmake-build-debug-umrt-arm-ros-dev/
+/.idea/
+/output-doxygen/
+# We ignore package.xml because it is generated from package.in.xml
+package.xml

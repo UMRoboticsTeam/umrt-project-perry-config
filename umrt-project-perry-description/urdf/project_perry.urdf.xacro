@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- Basic differential drive mobile base -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="project_perry">
+  <xacro:arg name="prefix" default="" />
+  <xacro:arg name="use_mock_hardware" default="false" />
+
+  <xacro:include filename="$(find umrt-project-perry-description)/urdf/project_perry_description.urdf.xacro" />
+
+  <!-- Import Rviz colors -->
+  <xacro:include filename="$(find umrt-project-perry-description)/urdf/project_perry.materials.xacro" />
+
+  <!-- Import project_perry ros2_control description -->
+  <xacro:include filename="$(find umrt-arm-ros-firmware)/config/project_perry.ros2_control.xacro" />
+
+  <!-- Used for fixing robot -->
+  <link name="world"/>
+
+  <xacro:project_perry parent="world" prefix="$(arg prefix)">
+          <origin xyz="0 0 0" rpy="0 0 0" />
+  </xacro:project_perry>
+
+  <xacro:project_perry_ros2_control
+    name="ProjectPerry" prefix="$(arg prefix)" use_mock_hardware="$(arg use_mock_hardware)"/>
+
+</robot>
