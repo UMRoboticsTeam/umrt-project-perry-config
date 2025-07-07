@@ -11,9 +11,9 @@ jobs:
       contents: write
       packages: read
 
-    uses: UMRoboticsTeam/umrt-ci-cd/.github/workflows/ros-build.yaml@ros-working-directory
+    uses: UMRoboticsTeam/umrt-ci-cd/.github/workflows/ros-build.yaml@main
     with:
-      build_image: ghcr.io/umroboticsteam/umrt-build:v0.0.16
+      build_image: ghcr.io/umroboticsteam/umrt-build:v0.0.26
       publish_image: ghcr.io/umroboticsteam/umrt-apt-image:latest
       publish_repo: UMRoboticsTeam/umrt-apt-repo
       working_directory: umrt-project-perry-description
@@ -27,9 +27,9 @@ jobs:
       contents: write
       packages: read
 
-    uses: UMRoboticsTeam/umrt-ci-cd/.github/workflows/ros-build.yaml@ros-working-directory
+    uses: UMRoboticsTeam/umrt-ci-cd/.github/workflows/ros-build.yaml@main
     with:
-      build_image: ghcr.io/umroboticsteam/umrt-build:v0.0.16
+      build_image: ghcr.io/umroboticsteam/umrt-build:v0.0.26
       publish_image: ghcr.io/umroboticsteam/umrt-apt-image:latest
       publish_repo: UMRoboticsTeam/umrt-apt-repo
       working_directory: umrt-project-perry-moveit-config
@@ -43,9 +43,9 @@ jobs:
       contents: write
       packages: read
 
-    uses: UMRoboticsTeam/umrt-ci-cd/.github/workflows/ros-build.yaml@ros-working-directory
+    uses: UMRoboticsTeam/umrt-ci-cd/.github/workflows/ros-build.yaml@main
     with:
-      build_image: ghcr.io/umroboticsteam/umrt-build:v0.0.16
+      build_image: ghcr.io/umroboticsteam/umrt-build:v0.0.26
       publish_image: ghcr.io/umroboticsteam/umrt-apt-image:latest
       publish_repo: UMRoboticsTeam/umrt-apt-repo
       working_directory: project_perry_project_perry_ikfast_plugin
