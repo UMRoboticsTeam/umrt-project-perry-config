@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <package format="2">
   <name>project_perry_project_perry_ikfast_plugin</name>
-  <version>0.0.0</version>
+  <version>@version_input@</version>
   <description>IKFast plugin for project_perry</description>
   <license>BSD</license>
   <maintainer email="noah@todo.todo">noah</maintainer>
