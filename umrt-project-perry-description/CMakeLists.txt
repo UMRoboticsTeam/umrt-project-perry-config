@@ -34,7 +34,7 @@ configure_file(
 
 # INSTALL
 install(
-        DIRECTORY urdf rviz
+        DIRECTORY urdf rviz assets
         DESTINATION share/${PROJECT_NAME}/
 )
 
