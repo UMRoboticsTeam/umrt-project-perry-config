@@ -1,188 +1,188 @@
 <?xml version="1.0" ?>
 <!-- Generated using onshape-to-robot -->
 <!-- Onshape https://umroverteam.onshape.com/documents/66c0dbcda9354d113e2518a1/w/ff529f9b85a95e1f6e2a2659/e/4aad42a34db1b660e5821c6d -->
-<robot name="pp-arm2">
-  <!-- Link part_48 -->
-  <link name="part_48">
+<robot name="pp-arm3">
+  <!-- Link base_link -->
+  <link name="base_link">
     <inertial>
       <origin xyz="0.00286812 -0.0209097 0.0286943" rpy="0 0 0"/>
       <mass value="2.80632"/>
       <inertia ixx="0.0231691" ixy="0.00065571" ixz="-0.000230556" iyy="0.0147789" iyz="0.000656447" izz="0.0344912"/>
     </inertial>
-    <!-- Part part_48_parts -->
+    <!-- Part base_link_parts -->
     <visual>
       <origin xyz="0.00286812 -0.0209097 0.0286943" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://assets/merged/part_48_visual.stl"/>
+        <mesh filename="package://assets/merged/base_link_visual.stl"/>
       </geometry>
-      <material name="part_48_parts_material">
+      <material name="base_link_parts_material">
         <color rgba="0.0745098 0.678431 0.972549 1"/>
       </material>
     </visual>
     <collision>
       <origin xyz="0.00286812 -0.0209097 0.0286943" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://assets/merged/part_48_collision.stl"/>
+        <mesh filename="package://assets/merged/base_link_collision.stl"/>
       </geometry>
     </collision>
   </link>
-  <!-- Link part_43 -->
-  <link name="part_43">
+  <!-- Link base_platter -->
+  <link name="base_platter">
     <inertial>
       <origin xyz="-0.0119595 -0.00118557 -0.0231327" rpy="0 0 0"/>
       <mass value="1.84265"/>
       <inertia ixx="0.00590316" ixy="0.000138602" ixz="-0.000532603" iyy="0.00955076" iyz="2.11489e-05" izz="0.012905"/>
     </inertial>
-    <!-- Part part_43_parts -->
+    <!-- Part base_platter_parts -->
     <visual>
-      <origin xyz="-0.0119595 -0.00118557 -0.0231327" rpy="-3.13855 -0.016189 -0.393062"/>
+      <origin xyz="-0.0119595 -0.00118557 -0.0231327" rpy="-3.13855 -0.016189 0.947366"/>
       <geometry>
-        <mesh filename="package://assets/merged/part_43_visual.stl"/>
+        <mesh filename="package://assets/merged/base_platter_visual.stl"/>
       </geometry>
-      <material name="part_43_parts_material">
+      <material name="base_platter_parts_material">
         <color rgba="0.570634 0.573152 0.433741 1"/>
       </material>
     </visual>
     <collision>
-      <origin xyz="-0.0119595 -0.00118557 -0.0231327" rpy="-3.13855 -0.016189 -0.393062"/>
+      <origin xyz="-0.0119595 -0.00118557 -0.0231327" rpy="-3.13855 -0.016189 0.947366"/>
       <geometry>
-        <mesh filename="package://assets/merged/part_43_collision.stl"/>
+        <mesh filename="package://assets/merged/base_platter_collision.stl"/>
       </geometry>
     </collision>
   </link>
-  <!-- Link part_33 -->
-  <link name="part_33">
+  <!-- Link humerus_link -->
+  <link name="humerus_link">
     <inertial>
-      <origin xyz="0.191821 -0.0003306 -0.0214358" rpy="0 0 0"/>
+      <origin xyz="0.192899 1.61439e-05 -0.0214358" rpy="0 0 0"/>
       <mass value="2.10608"/>
-      <inertia ixx="0.00610007" ixy="-0.00133336" ixz="-0.000268934" iyy="0.0355323" iyz="-2.46829e-05" izz="0.0374741"/>
+      <inertia ixx="0.00597093" ixy="-0.00115128" ixz="-0.000267892" iyy="0.0356475" iyz="-2.43475e-05" izz="0.0374601"/>
     </inertial>
-    <!-- Part part_33_parts -->
+    <!-- Part humerus_link_parts -->
     <visual>
-      <origin xyz="0.191821 -0.0003306 -0.0214358" rpy="1.61286 1.17742 1.48782"/>
+      <origin xyz="0.192899 1.61439e-05 -0.0214358" rpy="-1.5794 0.623336 -1.23434"/>
       <geometry>
-        <mesh filename="package://assets/merged/part_33_visual.stl"/>
+        <mesh filename="package://assets/merged/humerus_link_visual.stl"/>
       </geometry>
-      <material name="part_33_parts_material">
+      <material name="humerus_link_parts_material">
         <color rgba="0.470126 0.661547 0.742536 1"/>
       </material>
     </visual>
     <collision>
-      <origin xyz="0.191821 -0.0003306 -0.0214358" rpy="1.61286 1.17742 1.48782"/>
+      <origin xyz="0.192899 1.61439e-05 -0.0214358" rpy="-1.5794 0.623336 -1.23434"/>
       <geometry>
-        <mesh filename="package://assets/merged/part_33_collision.stl"/>
+        <mesh filename="package://assets/merged/humerus_link_collision.stl"/>
       </geometry>
     </collision>
   </link>
-  <!-- Link flat_pattern_of_plate_1 -->
-  <link name="flat_pattern_of_plate_1">
+  <!-- Link flat_pattern_of_humerus_link -->
+  <link name="flat_pattern_of_humerus_link">
     <inertial>
-      <origin xyz="0.0157793 -0.119702 0.0450796" rpy="0 0 0"/>
-      <mass value="2.41986"/>
-      <inertia ixx="0.06464" ixy="0.0122868" ixz="-5.92337e-06" iyy="0.0115771" iyz="2.1658e-05" izz="0.0644214"/>
+      <origin xyz="0.0461837 -0.111635 0.0450797" rpy="0 0 0"/>
+      <mass value="2.41904"/>
+      <inertia ixx="0.0549307" ixy="0.0238789" ixz="-1.1312e-05" iyy="0.0212463" iyz="1.93753e-05" izz="0.064383"/>
     </inertial>
-    <!-- Part flat_pattern_of_plate_1_parts -->
+    <!-- Part flat_pattern_of_humerus_link_parts -->
     <visual>
-      <origin xyz="0.0157793 -0.119702 0.0450796" rpy="1.61286 1.17742 -1.65378"/>
+      <origin xyz="0.0461837 -0.111635 0.0450797" rpy="-1.5794 0.623336 1.90726"/>
       <geometry>
-        <mesh filename="package://assets/merged/flat_pattern_of_plate_1_visual.stl"/>
+        <mesh filename="package://assets/merged/flat_pattern_of_humerus_link_visual.stl"/>
       </geometry>
-      <material name="flat_pattern_of_plate_1_parts_material">
-        <color rgba="0.358967 0.586653 0.658572 1"/>
+      <material name="flat_pattern_of_humerus_link_parts_material">
+        <color rgba="0.358759 0.586672 0.658794 1"/>
       </material>
     </visual>
     <collision>
-      <origin xyz="0.0157793 -0.119702 0.0450796" rpy="1.61286 1.17742 -1.65378"/>
+      <origin xyz="0.0461837 -0.111635 0.0450797" rpy="-1.5794 0.623336 1.90726"/>
       <geometry>
-        <mesh filename="package://assets/merged/flat_pattern_of_plate_1_collision.stl"/>
+        <mesh filename="package://assets/merged/flat_pattern_of_humerus_link_collision.stl"/>
       </geometry>
     </collision>
   </link>
-  <!-- Link part_6 -->
-  <link name="part_6">
+  <!-- Link wirst_body -->
+  <link name="wirst_body">
     <inertial>
       <origin xyz="1.74216e-05 -0.0133229 -0.0449775" rpy="0 0 0"/>
       <mass value="0.114952"/>
       <inertia ixx="0.000141143" ixy="-3.67177e-10" ixz="8.43247e-07" iyy="0.000208967" iyz="4.47572e-13" izz="9.77212e-05"/>
     </inertial>
-    <!-- Part part_6_parts -->
+    <!-- Part wirst_body_parts -->
     <visual>
-      <origin xyz="1.74216e-05 -0.0133229 -0.0449775" rpy="1.61286 1.17742 -1.4845"/>
+      <origin xyz="1.74216e-05 -0.0133229 -0.0449775" rpy="-1.5794 0.623336 1.87508"/>
       <geometry>
-        <mesh filename="package://assets/merged/part_6_visual.stl"/>
+        <mesh filename="package://assets/merged/wirst_body_visual.stl"/>
       </geometry>
-      <material name="part_6_parts_material">
+      <material name="wirst_body_parts_material">
         <color rgba="0.0745098 0.678431 0.972549 1"/>
       </material>
     </visual>
     <collision>
-      <origin xyz="1.74216e-05 -0.0133229 -0.0449775" rpy="1.61286 1.17742 -1.4845"/>
+      <origin xyz="1.74216e-05 -0.0133229 -0.0449775" rpy="-1.5794 0.623336 1.87508"/>
       <geometry>
-        <mesh filename="package://assets/merged/part_6_collision.stl"/>
+        <mesh filename="package://assets/merged/wirst_body_collision.stl"/>
       </geometry>
     </collision>
   </link>
-  <!-- Link part_8 -->
-  <link name="part_8">
+  <!-- Link wrist_link -->
+  <link name="wrist_link">
     <inertial>
-      <origin xyz="-7.09882e-18 1.30193e-17 -0.00183593" rpy="0 0 0"/>
+      <origin xyz="-1.636e-17 -6.74869e-18 -0.00183593" rpy="0 0 0"/>
       <mass value="0.0230672"/>
-      <inertia ixx="6.54736e-06" ixy="-3.28523e-23" ixz="-1.16149e-21" iyy="6.54736e-06" iyz="-2.92654e-22" izz="1.27521e-05"/>
+      <inertia ixx="6.54736e-06" ixy="1.482e-22" ixz="1.20262e-21" iyy="6.54736e-06" iyz="-9.13762e-22" izz="1.27521e-05"/>
     </inertial>
-    <!-- Part part_8_parts -->
+    <!-- Part wrist_link_parts -->
     <visual>
-      <origin xyz="-2.77556e-17 5.55112e-17 -0.00183593" rpy="-1.62212 0.391834 -2.8036"/>
+      <origin xyz="0 6.93889e-18 -0.00183593" rpy="-2.07296 -0.886139 2.06643"/>
       <geometry>
-        <mesh filename="package://assets/merged/part_8_visual.stl"/>
+        <mesh filename="package://assets/merged/wrist_link_visual.stl"/>
       </geometry>
-      <material name="part_8_parts_material">
+      <material name="wrist_link_parts_material">
         <color rgba="0.972549 0.529412 0.00392157 1"/>
       </material>
     </visual>
     <collision>
-      <origin xyz="-2.77556e-17 5.55112e-17 -0.00183593" rpy="-1.62212 0.391834 -2.8036"/>
+      <origin xyz="0 6.93889e-18 -0.00183593" rpy="-2.07296 -0.886139 2.06643"/>
       <geometry>
-        <mesh filename="package://assets/merged/part_8_collision.stl"/>
+        <mesh filename="package://assets/merged/wrist_link_collision.stl"/>
       </geometry>
     </collision>
   </link>
-  <!-- Joint from part_6 to part_8 -->
+  <!-- Joint from wirst_body to wrist_link -->
   <joint name="wrist_roll" type="revolute">
-    <origin xyz="1.11022e-16 -0.0314483 -0.0449775" rpy="1.5708 -1.19705 3.14159"/>
-    <parent link="part_6"/>
-    <child link="part_8"/>
+    <origin xyz="-5.55112e-17 -0.0314483 -0.0449775" rpy="-1.5708 -0.100784 4.27299e-14"/>
+    <parent link="wirst_body"/>
+    <child link="wrist_link"/>
     <axis xyz="0 0 1"/>
     <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
-  <!-- Joint from flat_pattern_of_plate_1 to part_6 -->
+  <!-- Joint from flat_pattern_of_humerus_link to wirst_body -->
   <joint name="wrist_pitch" type="revolute">
-    <origin xyz="0.070773 -0.387287 0.0899558" rpy="8.40994e-16 7.19541e-16 -0.169273"/>
-    <parent link="flat_pattern_of_plate_1"/>
-    <child link="part_6"/>
+    <origin xyz="0.168411 -0.355861 0.0899558" rpy="5.38276e-15 -3.06298e-16 0.0321741"/>
+    <parent link="flat_pattern_of_humerus_link"/>
+    <child link="wirst_body"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="10" lower="-1.22078" upper="1.92082"/>
+    <limit effort="10" velocity="10" lower="-1.16095" upper="1.98064"/>
   </joint>
-  <!-- Joint from part_33 to flat_pattern_of_plate_1 -->
-  <joint name="elbow" type="revolute">
-    <origin xyz="0.4572 0.031582 -0.067374" rpy="-1.67319e-16 9.5285e-16 -3.14159"/>
-    <parent link="part_33"/>
-    <child link="flat_pattern_of_plate_1"/>
+  <!-- Joint from humerus_link to flat_pattern_of_humerus_link -->
+  <joint name="elbow_pitch" type="revolute">
+    <origin xyz="0.4572 0.031582 -0.067374" rpy="-7.74298e-17 1.17778e-15 -3.14159"/>
+    <parent link="humerus_link"/>
+    <child link="flat_pattern_of_humerus_link"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="10" lower="-0.791612" upper="0.779185"/>
+    <limit effort="10" velocity="10" lower="-1.05288" upper="0.517911"/>
   </joint>
-  <!-- Joint from part_43 to part_33 -->
+  <!-- Joint from base_platter to humerus_link -->
   <joint name="base_pitch" type="revolute">
-    <origin xyz="-0.0204961 -1.85399e-16 -0.0851182" rpy="1.5708 1.44557 -1.5708"/>
-    <parent link="part_43"/>
-    <child link="part_33"/>
+    <origin xyz="-0.0204961 7.17742e-17 -0.0851182" rpy="-1.5708 1.2144 1.5708"/>
+    <parent link="base_platter"/>
+    <child link="humerus_link"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="10" lower="-1.69602" upper="1.44557"/>
+    <limit effort="10" velocity="10" lower="-1.2144" upper="1.9272"/>
   </joint>
-  <!-- Joint from part_48 to part_43 -->
+  <!-- Joint from base_link to base_platter -->
   <joint name="base_yaw" type="revolute">
-    <origin xyz="0.000390865 0.000967073 0.0809889" rpy="-3.1382 -0.0161184 -0.393065"/>
-    <parent link="part_48"/>
-    <child link="part_43"/>
+    <origin xyz="0.000390865 0.000967073 0.0809889" rpy="3.12667 -0.00698374 0.947443"/>
+    <parent link="base_link"/>
+    <child link="base_platter"/>
     <axis xyz="0 0 1"/>
     <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
