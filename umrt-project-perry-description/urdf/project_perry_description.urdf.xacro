@@ -13,199 +13,184 @@
         <!-- Link base_link -->
         <link name="base_link">
             <inertial>
-                <origin xyz="0.00286812 -0.0209097 0.0286943" rpy="0 0 0"/>
+                <origin xyz="0.0217032 0.00136097 0.0312387" rpy="0 0 0"/>
                 <mass value="2.80632"/>
-                <inertia ixx="0.0231691" ixy="0.00065571" ixz="-0.000230556" iyy="0.0147789" iyz="0.000656447" izz="0.0344912"/>
+                <inertia ixx="0.01476" ixy="-0.000561383" ixz="-0.000585443" iyy="0.0231544" iyz="-3.788e-05" izz="0.034474"/>
             </inertial>
-            <!-- Part base_link_parts -->
+            <!-- Part base_link -->
             <visual>
-                <origin xyz="0.00286812 -0.0209097 0.0286943" rpy="0 -0 0"/>
+                <origin xyz="0 0 0" rpy="0 -0 0"/>
                 <geometry>
-                    <mesh filename="file://$(find umrt-project-perry-description)/assets/merged/base_link_visual.stl"/>
+                    <mesh filename="package://umrt-project-perry-description/assets/base_link.stl"/>
                 </geometry>
-                <material name="base_link_parts_material">
-                    <color rgba="0.0745098 0.678431 0.972549 1"/>
+                <material name="base_link_material">
+                    <color rgba="0.980392 0.713725 0.00392157 1"/>
                 </material>
             </visual>
             <collision>
-                <origin xyz="0.00286812 -0.0209097 0.0286943" rpy="0 -0 0"/>
+                <origin xyz="0 0 0" rpy="0 -0 0"/>
                 <geometry>
-                    <mesh filename="file://$(find umrt-project-perry-description)/assets/merged/base_link_collision.stl"/>
+                    <mesh filename="package://umrt-project-perry-description/assets/base_link.stl"/>
                 </geometry>
             </collision>
         </link>
-        <!-- Link base_platter -->
-        <link name="base_platter">
+        <!-- Link platter_link -->
+        <link name="platter_link">
             <inertial>
-                <origin xyz="-0.0119595 -0.00118557 -0.0231327" rpy="0 0 0"/>
-                <mass value="1.84265"/>
-                <inertia ixx="0.00590316" ixy="0.000138602" ixz="-0.000532603" iyy="0.00955076" iyz="2.11489e-05" izz="0.012905"/>
+                <origin xyz="-0.00116951 0.0133071 -0.0287373" rpy="0 0 0"/>
+                <mass value="1.63507"/>
+                <inertia ixx="0.00858588" ixy="-0.000126724" ixz="2.05093e-05" iyy="0.00495962" iyz="0.0004789" izz="0.0112158"/>
             </inertial>
-            <!-- Part base_platter_parts -->
+            <!-- Part platter_link -->
             <visual>
-                <origin xyz="-0.0119595 -0.00118557 -0.0231327" rpy="-3.13855 -0.016189 0.0123501"/>
+                <origin xyz="0 0 -0.0028575" rpy="3.14159 -0 0"/>
                 <geometry>
-                    <mesh filename="file://$(find umrt-project-perry-description)/assets/merged/base_platter_visual.stl"/>
+                    <mesh filename="package://umrt-project-perry-description/assets/platter_link.stl"/>
                 </geometry>
-                <material name="base_platter_parts_material">
-                    <color rgba="0.570634 0.573152 0.433741 1"/>
+                <material name="platter_link_material">
+                    <color rgba="0.615686 0.811765 0.929412 1"/>
                 </material>
             </visual>
             <collision>
-                <origin xyz="-0.0119595 -0.00118557 -0.0231327" rpy="-3.13855 -0.016189 0.0123501"/>
+                <origin xyz="0 0 -0.0028575" rpy="3.14159 -0 0"/>
                 <geometry>
-                    <mesh filename="file://$(find umrt-project-perry-description)/assets/merged/base_platter_collision.stl"/>
+                    <mesh filename="package://umrt-project-perry-description/assets/platter_link.stl"/>
                 </geometry>
             </collision>
         </link>
         <!-- Link humerus_link -->
         <link name="humerus_link">
             <inertial>
-                <origin xyz="0.19104 -0.000401365 -0.0214358" rpy="0 0 0"/>
-                <mass value="2.10608"/>
-                <inertia ixx="0.00612771" ixy="-0.00148492" ixz="-0.000269689" iyy="0.0355118" iyz="-2.47513e-05" izz="0.0374813"/>
+                <origin xyz="0.164436 -0.00339071 0.00134625" rpy="0 0 0"/>
+                <mass value="3.56011"/>
+                <inertia ixx="0.0086411" ixy="0.00118596" ixz="0.000373814" iyy="0.0327497" iyz="-3.92663e-05" izz="0.0358039"/>
             </inertial>
-            <!-- Part humerus_link_parts -->
+            <!-- Part humerus_link -->
             <visual>
-                <origin xyz="0.19104 -0.000401365 -0.0214358" rpy="-2.48682 1.55043 -2.48996"/>
+                <origin xyz="-2.77556e-17 1.14354e-20 0.00191351" rpy="9.49411e-16 -7.77156e-16 -1.05915e-13"/>
                 <geometry>
-                    <mesh filename="file://$(find umrt-project-perry-description)/assets/merged/humerus_link_visual.stl"/>
+                    <mesh filename="package://umrt-project-perry-description/assets/humerus_link.stl"/>
                 </geometry>
-                <material name="humerus_link_parts_material">
-                    <color rgba="0.470126 0.661547 0.742536 1"/>
+                <material name="humerus_link_material">
+                    <color rgba="0.972549 0.529412 0.00392157 1"/>
                 </material>
             </visual>
             <collision>
-                <origin xyz="0.19104 -0.000401365 -0.0214358" rpy="-2.48682 1.55043 -2.48996"/>
+                <origin xyz="-2.77556e-17 1.14354e-20 0.00191351" rpy="9.49411e-16 -7.77156e-16 -1.05915e-13"/>
                 <geometry>
-                    <mesh filename="file://$(find umrt-project-perry-description)/assets/merged/humerus_link_collision.stl"/>
+                    <mesh filename="package://umrt-project-perry-description/assets/humerus_link.stl"/>
                 </geometry>
             </collision>
         </link>
-        <!-- Link flat_pattern_of_humerus_link -->
-        <link name="flat_pattern_of_humerus_link">
+        <!-- Link ulna_link -->
+        <link name="ulna_link">
             <inertial>
-                <origin xyz="-0.00600861 -0.120661 0.0450797" rpy="0 0 0"/>
-                <mass value="2.41904"/>
-                <inertia ixx="0.0672327" ixy="0.0021158" ixz="-1.93671e-06" iyy="0.00894428" iyz="2.2352e-05" izz="0.064383"/>
+                <origin xyz="0.110616 -0.00829019 -0.00355982" rpy="0 0 0"/>
+                <mass value="1.99897"/>
+                <inertia ixx="0.00735145" ixy="-0.00226329" ixz="-1.19432e-05" iyy="0.0554343" iyz="-1.89527e-06" izz="0.0532783"/>
             </inertial>
-            <!-- Part flat_pattern_of_humerus_link_parts -->
+            <!-- Part ulna_link -->
             <visual>
-                <origin xyz="-0.00600861 -0.120661 0.0450797" rpy="-2.48682 1.55043 0.651633"/>
+                <origin xyz="2.77556e-17 0 -0.002683" rpy="3.14159 -2.49188e-14 1.20993e-13"/>
                 <geometry>
-                    <mesh filename="file://$(find umrt-project-perry-description)/assets/merged/flat_pattern_of_humerus_link_visual.stl"/>
+                    <mesh filename="package://umrt-project-perry-description/assets/ulna_link.stl"/>
                 </geometry>
-                <material name="flat_pattern_of_humerus_link_parts_material">
-                    <color rgba="0.358759 0.586672 0.658794 1"/>
+                <material name="ulna_link_material">
+                    <color rgba="0.231373 0.380392 0.705882 1"/>
                 </material>
             </visual>
             <collision>
-                <origin xyz="-0.00600861 -0.120661 0.0450797" rpy="-2.48682 1.55043 0.651633"/>
+                <origin xyz="2.77556e-17 0 -0.002683" rpy="3.14159 -2.49188e-14 1.20993e-13"/>
                 <geometry>
-                    <mesh filename="file://$(find umrt-project-perry-description)/assets/merged/flat_pattern_of_humerus_link_collision.stl"/>
-                </geometry>
-            </collision>
-        </link>
-        <!-- Link wirst_body -->
-        <link name="wirst_body">
-            <inertial>
-                <origin xyz="1.74216e-05 -0.0133229 -0.0449775" rpy="0 0 0"/>
-                <mass value="0.114952"/>
-                <inertia ixx="0.000141143" ixy="-3.67177e-10" ixz="8.43247e-07" iyy="0.000208967" iyz="4.47572e-13" izz="9.77212e-05"/>
-            </inertial>
-            <!-- Part wirst_body_parts -->
-            <visual>
-                <origin xyz="1.74216e-05 -0.0133229 -0.0449775" rpy="-2.48682 1.55043 0.651633"/>
-                <geometry>
-                    <mesh filename="file://$(find umrt-project-perry-description)/assets/merged/wirst_body_visual.stl"/>
-                </geometry>
-                <material name="wirst_body_parts_material">
-                    <color rgba="0.0745098 0.678431 0.972549 1"/>
-                </material>
-            </visual>
-            <collision>
-                <origin xyz="1.74216e-05 -0.0133229 -0.0449775" rpy="-2.48682 1.55043 0.651633"/>
-                <geometry>
-                    <mesh filename="file://$(find umrt-project-perry-description)/assets/merged/wirst_body_collision.stl"/>
+                    <mesh filename="package://umrt-project-perry-description/assets/ulna_link.stl"/>
                 </geometry>
             </collision>
         </link>
         <!-- Link wrist_link -->
         <link name="wrist_link">
             <inertial>
-                <origin xyz="-2.16903e-18 -4.83311e-17 -0.00183593" rpy="0 0 0"/>
-                <mass value="0.0230672"/>
-                <inertia ixx="6.54736e-06" ixy="-2.51728e-23" ixz="-4.00656e-23" iyy="6.54736e-06" iyz="-5.94725e-24" izz="1.27521e-05"/>
+                <origin xyz="0.013323 -1.73937e-05 -0.000499842" rpy="0 0 0"/>
+                <mass value="0.114952"/>
+                <inertia ixx="0.000208967" ixy="-4.73277e-10" ixz="2.80543e-10" iyy="0.000141142" iyz="8.43109e-07" izz="9.77216e-05"/>
             </inertial>
-            <!-- Part wrist_link_parts -->
+            <!-- Part wrist_link -->
             <visual>
-                <origin xyz="-2.1684e-18 0 -0.00183593" rpy="-1.56756 -0.0123485 -0.0161902"/>
+                <origin xyz="5.55112e-17 1.11022e-16 -0.0005" rpy="2.5307e-14 2.59572e-14 -8.82627e-15"/>
                 <geometry>
-                    <mesh filename="file://$(find umrt-project-perry-description)/assets/merged/wrist_link_visual.stl"/>
+                    <mesh filename="package://umrt-project-perry-description/assets/wrist_link.stl"/>
                 </geometry>
-                <material name="wrist_link_parts_material">
+                <material name="wrist_link_material">
                     <color rgba="0.972549 0.529412 0.00392157 1"/>
                 </material>
             </visual>
             <collision>
-                <origin xyz="-2.1684e-18 0 -0.00183593" rpy="-1.56756 -0.0123485 -0.0161902"/>
+                <origin xyz="5.55112e-17 1.11022e-16 -0.0005" rpy="2.5307e-14 2.59572e-14 -8.82627e-15"/>
                 <geometry>
-                    <mesh filename="file://$(find umrt-project-perry-description)/assets/merged/wrist_link_collision.stl"/>
+                    <mesh filename="package://umrt-project-perry-description/assets/wrist_link.stl"/>
                 </geometry>
             </collision>
         </link>
-        <!-- Frame toolpoint (dummy link + fixed joint) -->
-        <link name="toolpoint">
-            <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <!-- Link gripper_interface -->
+        <link name="gripper_interface">
             <inertial>
-                <origin xyz="0 0 0" rpy="0 0 0"/>
-                <mass value="1e-9"/>
-                <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+                <origin xyz="-1.91636e-19 -8.24791e-19 -0.00328593" rpy="0 0 0"/>
+                <mass value="0.0230672"/>
+                <inertia ixx="6.54736e-06" ixy="-2.18071e-20" ixz="1.96807e-35" iyy="6.54736e-06" iyz="3.93705e-21" izz="1.27521e-05"/>
             </inertial>
+            <!-- Part gripper_interface -->
+            <visual>
+                <origin xyz="0 -3.25261e-19 -0.00145" rpy="-3.14159 -1.07048e-16 1.5708"/>
+                <geometry>
+                    <mesh filename="package://umrt-project-perry-description/assets/gripper_interface.stl"/>
+                </geometry>
+                <material name="gripper_interface_material">
+                    <color rgba="0.498039 0.498039 0.498039 1"/>
+                </material>
+            </visual>
+            <collision>
+                <origin xyz="0 -3.25261e-19 -0.00145" rpy="-3.14159 -1.07048e-16 1.5708"/>
+                <geometry>
+                    <mesh filename="package://umrt-project-perry-description/assets/gripper_interface.stl"/>
+                </geometry>
+            </collision>
         </link>
-        <joint name="toolpoint_frame" type="fixed">
-            <origin xyz="6.01645e-15 -3.66374e-14 -0.185923" rpy="-2.31486e-13 -2.82334e-14 2.83915e-14"/>
-            <parent link="wrist_link"/>
-            <child link="toolpoint"/>
-            <axis xyz="0 0 0"/>
-        </joint>
-        <!-- Joint from wirst_body to wrist_link -->
+        <!-- Joint from wrist_link to gripper_interface -->
         <joint name="wrist_roll" type="revolute">
-            <origin xyz="2.22045e-16 -0.0314483 -0.0449775" rpy="-1.5708 1.5708 0"/>
-            <parent link="wirst_body"/>
-            <child link="wrist_link"/>
+            <origin xyz="0.0299983 -1.11022e-16 -0.0005" rpy="-1.5708 -2.5307e-14 1.5708"/>
+            <parent link="wrist_link"/>
+            <child link="gripper_interface"/>
             <axis xyz="0 0 1"/>
             <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
         </joint>
-        <!-- Joint from flat_pattern_of_humerus_link to wirst_body -->
+        <!-- Joint from ulna_link to wrist_link -->
         <joint name="wrist_pitch" type="revolute">
-            <origin xyz="1.77636e-15 -0.3937 0.0899558" rpy="1.67261e-15 -2.51166e-15 -1.23947e-15"/>
-            <parent link="flat_pattern_of_humerus_link"/>
-            <child link="wirst_body"/>
+            <origin xyz="0.3937 4.75175e-14 -0.00169862" rpy="-2.38638e-14 -2.49188e-14 1.20993e-13"/>
+            <parent link="ulna_link"/>
+            <child link="wrist_link"/>
             <axis xyz="0 0 1"/>
             <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
         </joint>
-        <!-- Joint from humerus_link to flat_pattern_of_humerus_link -->
+        <!-- Joint from humerus_link to ulna_link -->
         <joint name="elbow_pitch" type="revolute">
-            <origin xyz="0.4572 0.031582 -0.067374" rpy="5.83832e-15 6.48493e-15 -3.14159"/>
+            <origin xyz="0.4572 -0.031582 0.00354351" rpy="-7.77156e-16 -1.07188e-15 1.5708"/>
             <parent link="humerus_link"/>
-            <child link="flat_pattern_of_humerus_link"/>
+            <child link="ulna_link"/>
             <axis xyz="0 0 1"/>
-            <limit effort="10" velocity="10" lower="-0.610865" upper="0.959931"/>
+            <limit effort="10" velocity="10" lower="-0.959931" upper="0.610865"/>
         </joint>
-        <!-- Joint from base_platter to humerus_link -->
+        <!-- Joint from platter_link to humerus_link -->
         <joint name="base_pitch" type="revolute">
-            <origin xyz="-0.0204961 -7.37257e-18 -0.0851182" rpy="-3.14159 1.5708 0"/>
-            <parent link="base_platter"/>
+            <origin xyz="2.34735e-18 -0.0020731 -0.0879775" rpy="-1.5708 1.5708 0"/>
+            <parent link="platter_link"/>
             <child link="humerus_link"/>
             <axis xyz="0 0 1"/>
             <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
         </joint>
-        <!-- Joint from base_link to base_platter -->
+        <!-- Joint from base_link to platter_link -->
         <joint name="base_yaw" type="revolute">
-            <origin xyz="0.000390865 0.000967073 0.0809889" rpy="3.13835 -0.0161502 0.0124009"/>
+            <origin xyz="0 0 0.0807747" rpy="3.14159 -0 0"/>
             <parent link="base_link"/>
-            <child link="base_platter"/>
+            <child link="platter_link"/>
             <axis xyz="0 0 1"/>
             <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
         </joint>

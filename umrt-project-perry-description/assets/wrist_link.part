@@ -1,13 +1,13 @@
 {
     "configuration": "default",
     "documentId": "66c0dbcda9354d113e2518a1",
-    "documentMicroversion": "90cb75f3086e6d173e75d3b1",
-    "elementId": "98c3fd2307fbbcf6bb857f56",
+    "documentMicroversion": "569b5e007c242d99ec98499d",
+    "elementId": "f6f3632d747d4cb6f593ee45",
     "fullConfiguration": "default",
-    "id": "MG4b5S6d8mDnq77Cz",
+    "id": "MwpUCqfTfzU0bU6PL",
     "isStandardContent": false,
     "name": "wrist_link <1>",
-    "partId": "R6BD",
+    "partId": "JHD",
     "suppressed": false,
     "type": "Part"
 }
