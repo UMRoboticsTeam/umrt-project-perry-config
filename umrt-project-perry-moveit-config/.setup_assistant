@@ -7,9 +7,10 @@ moveit_setup_assistant_config:
   package_settings:
     author_name: Noah Reeder
     author_email: noahreederatc@gmail.com
-    generated_timestamp: 1750822039
+    generated_timestamp: 1753418033
   control_xacro:
     command:
+      - position
       - velocity
     state:
       - position
@@ -19,6 +20,7 @@ moveit_setup_assistant_config:
       - control_xacro
   control_xacro:
     command:
+      - position
       - velocity
     state:
       - position

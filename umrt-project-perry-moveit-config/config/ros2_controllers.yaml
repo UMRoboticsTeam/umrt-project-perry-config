@@ -3,23 +3,24 @@ controller_manager:
   ros__parameters:
     update_rate: 100  # Hz
 
-    arm_base_controller:
+    project_perry_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
 
     gripper_controller:
-      type: position_controllers/GripperActionController
+      type: joint_trajectory_controller/JointTrajectoryController
 
 
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
-arm_base_controller:
+project_perry_controller:
   ros__parameters:
     joints:
-      - base_yaw_joint
-      - base_pitch_joint
-      - elbow_0_joint
+      - base_yaw
+      - base_pitch
+      - elbow_pitch
+      - wrist_pitch
     command_interfaces:
       - position
       - velocity
@@ -28,4 +29,11 @@ arm_base_controller:
       - velocity
 gripper_controller:
   ros__parameters:
-    joint: gripper
+    joints:
+      - wrist_roll
+    command_interfaces:
+      - position
+      - velocity
+    state_interfaces:
+      - position
+      - velocity
