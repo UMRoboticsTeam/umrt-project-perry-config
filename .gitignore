@@ -1,5 +1,8 @@
 /cmake-build-*/
 /.idea/
 /output-doxygen/
+build/
+install/
+log/
 # We ignore package.xml because it is generated from package.in.xml
 package.xml
