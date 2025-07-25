@@ -22,18 +22,14 @@ project_perry_controller:
       - elbow_pitch
       - wrist_pitch
     command_interfaces:
-      - position
-      - velocity
+      []
     state_interfaces:
-      - position
-      - velocity
+      []
 gripper_controller:
   ros__parameters:
     joints:
       - wrist_roll
     command_interfaces:
-      - position
-      - velocity
+      []
     state_interfaces:
-      - position
-      - velocity
+      []

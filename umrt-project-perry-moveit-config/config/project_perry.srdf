@@ -37,7 +37,6 @@
     <disable_collisions link1="base_link" link2="wrist_link" reason="Never"/>
     <disable_collisions link1="gripper_interface" link2="humerus_link" reason="Never"/>
     <disable_collisions link1="gripper_interface" link2="platter_link" reason="Never"/>
-    <disable_collisions link1="gripper_interface" link2="ulna_link" reason="Never"/>
     <disable_collisions link1="humerus_link" link2="platter_link" reason="Adjacent"/>
     <disable_collisions link1="humerus_link" link2="ulna_link" reason="Adjacent"/>
     <disable_collisions link1="humerus_link" link2="wrist_link" reason="Never"/>
