@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="project_perry">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import project_perry urdf file -->
+    <xacro:include filename="$(find umrt-project-perry-description)/urdf/project_perry.urdf.xacro" />
+</robot>

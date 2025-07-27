@@ -10,39 +10,36 @@
     <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
     <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
     <group name="project_perry">
-	<chain base_link="base_link" tip_link="wrist_link"/>
+        <joint name="base_yaw"/>
+        <joint name="base_pitch"/>
+        <joint name="elbow_pitch"/>
+        <joint name="wrist_pitch"/>
     </group>
     <group name="gripper">
-        <link name="gripper_link"/>
-        <link name="finger_left_link"/>
-        <link name="finger_right_link"/>
+        <joint name="wrist_roll"/>
     </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
     <group_state name="default" group="project_perry">
-        <joint name="base_pitch_joint" value="-0.5"/>
-        <joint name="base_yaw_joint" value="0"/>
-        <joint name="elbow_0_joint" value="1.5"/>
+        <joint name="base_pitch" value="0"/>
+        <joint name="base_yaw" value="0"/>
+        <joint name="elbow_pitch" value="0"/>
+        <joint name="wrist_pitch" value="0"/>
     </group_state>
-    <group_state name="open" group="gripper">
-        <joint name="gripper" value="0"/>
-    </group_state>
-    <group_state name="closed" group="gripper">
-        <joint name="gripper" value="0.15"/>
+    <group_state name="default" group="gripper">
+        <joint name="wrist_roll" value="0"/>
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="gripper" parent_link="wrist_link" group="gripper"/>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
-    <disable_collisions link1="base_link" link2="humerus_link" reason="Never"/>
-    <disable_collisions link1="base_link" link2="shoulder_link" reason="Adjacent"/>
-    <disable_collisions link1="finger_left_link" link2="finger_right_link" reason="Never"/>
-    <disable_collisions link1="finger_left_link" link2="gripper_link" reason="Adjacent"/>
-    <disable_collisions link1="finger_left_link" link2="humerus_link" reason="Never"/>
-    <disable_collisions link1="finger_left_link" link2="wrist_link" reason="User"/>
-    <disable_collisions link1="finger_right_link" link2="gripper_link" reason="Adjacent"/>
-    <disable_collisions link1="finger_right_link" link2="humerus_link" reason="Never"/>
-    <disable_collisions link1="finger_right_link" link2="wrist_link" reason="User"/>
-    <disable_collisions link1="gripper_link" link2="humerus_link" reason="Never"/>
-    <disable_collisions link1="gripper_link" link2="wrist_link" reason="Adjacent"/>
-    <disable_collisions link1="humerus_link" link2="shoulder_link" reason="Adjacent"/>
-    <disable_collisions link1="humerus_link" link2="wrist_link" reason="Adjacent"/>
+    <disable_collisions link1="base_link" link2="gripper_interface" reason="Never"/>
+    <disable_collisions link1="base_link" link2="humerus_link" reason="User"/>
+    <disable_collisions link1="base_link" link2="ulna_link" reason="Never"/>
+    <disable_collisions link1="base_link" link2="wrist_link" reason="Never"/>
+    <disable_collisions link1="gripper_interface" link2="humerus_link" reason="Never"/>
+    <disable_collisions link1="gripper_interface" link2="platter_link" reason="Never"/>
+    <disable_collisions link1="humerus_link" link2="platter_link" reason="Adjacent"/>
+    <disable_collisions link1="humerus_link" link2="ulna_link" reason="Adjacent"/>
+    <disable_collisions link1="humerus_link" link2="wrist_link" reason="Never"/>
+    <disable_collisions link1="platter_link" link2="ulna_link" reason="Never"/>
+    <disable_collisions link1="platter_link" link2="wrist_link" reason="Never"/>
 </robot>

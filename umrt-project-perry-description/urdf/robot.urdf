@@ -1,0 +1,204 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://umroverteam.onshape.com/documents/66c0dbcda9354d113e2518a1/w/ff529f9b85a95e1f6e2a2659/e/4aad42a34db1b660e5821c6d -->
+<robot name="pp-arm3">
+  <!-- Link base_link -->
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.00286812 -0.0209097 0.0286943" rpy="0 0 0"/>
+      <mass value="2.80632"/>
+      <inertia ixx="0.0231691" ixy="0.00065571" ixz="-0.000230556" iyy="0.0147789" iyz="0.000656447" izz="0.0344912"/>
+    </inertial>
+    <!-- Part base_link_parts -->
+    <visual>
+      <origin xyz="0.00286812 -0.0209097 0.0286943" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/merged/base_link_visual.stl"/>
+      </geometry>
+      <material name="base_link_parts_material">
+        <color rgba="0.0745098 0.678431 0.972549 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00286812 -0.0209097 0.0286943" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/merged/base_link_collision.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link base_platter -->
+  <link name="base_platter">
+    <inertial>
+      <origin xyz="-0.0119595 -0.00118557 -0.0231327" rpy="0 0 0"/>
+      <mass value="1.84265"/>
+      <inertia ixx="0.00590316" ixy="0.000138602" ixz="-0.000532603" iyy="0.00955076" iyz="2.11489e-05" izz="0.012905"/>
+    </inertial>
+    <!-- Part base_platter_parts -->
+    <visual>
+      <origin xyz="-0.0119595 -0.00118557 -0.0231327" rpy="-3.13855 -0.016189 0.0123501"/>
+      <geometry>
+        <mesh filename="package://assets/merged/base_platter_visual.stl"/>
+      </geometry>
+      <material name="base_platter_parts_material">
+        <color rgba="0.570634 0.573152 0.433741 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0119595 -0.00118557 -0.0231327" rpy="-3.13855 -0.016189 0.0123501"/>
+      <geometry>
+        <mesh filename="package://assets/merged/base_platter_collision.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link humerus_link -->
+  <link name="humerus_link">
+    <inertial>
+      <origin xyz="0.19104 -0.000401365 -0.0214358" rpy="0 0 0"/>
+      <mass value="2.10608"/>
+      <inertia ixx="0.00612771" ixy="-0.00148492" ixz="-0.000269689" iyy="0.0355118" iyz="-2.47513e-05" izz="0.0374813"/>
+    </inertial>
+    <!-- Part humerus_link_parts -->
+    <visual>
+      <origin xyz="0.19104 -0.000401365 -0.0214358" rpy="-2.48682 1.55043 -2.48996"/>
+      <geometry>
+        <mesh filename="package://assets/merged/humerus_link_visual.stl"/>
+      </geometry>
+      <material name="humerus_link_parts_material">
+        <color rgba="0.470126 0.661547 0.742536 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.19104 -0.000401365 -0.0214358" rpy="-2.48682 1.55043 -2.48996"/>
+      <geometry>
+        <mesh filename="package://assets/merged/humerus_link_collision.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link flat_pattern_of_humerus_link -->
+  <link name="flat_pattern_of_humerus_link">
+    <inertial>
+      <origin xyz="-0.00600861 -0.120661 0.0450797" rpy="0 0 0"/>
+      <mass value="2.41904"/>
+      <inertia ixx="0.0672327" ixy="0.0021158" ixz="-1.93671e-06" iyy="0.00894428" iyz="2.2352e-05" izz="0.064383"/>
+    </inertial>
+    <!-- Part flat_pattern_of_humerus_link_parts -->
+    <visual>
+      <origin xyz="-0.00600861 -0.120661 0.0450797" rpy="-2.48682 1.55043 0.651633"/>
+      <geometry>
+        <mesh filename="package://assets/merged/flat_pattern_of_humerus_link_visual.stl"/>
+      </geometry>
+      <material name="flat_pattern_of_humerus_link_parts_material">
+        <color rgba="0.358759 0.586672 0.658794 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00600861 -0.120661 0.0450797" rpy="-2.48682 1.55043 0.651633"/>
+      <geometry>
+        <mesh filename="package://assets/merged/flat_pattern_of_humerus_link_collision.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link wirst_body -->
+  <link name="wirst_body">
+    <inertial>
+      <origin xyz="1.74216e-05 -0.0133229 -0.0449775" rpy="0 0 0"/>
+      <mass value="0.114952"/>
+      <inertia ixx="0.000141143" ixy="-3.67177e-10" ixz="8.43247e-07" iyy="0.000208967" iyz="4.47572e-13" izz="9.77212e-05"/>
+    </inertial>
+    <!-- Part wirst_body_parts -->
+    <visual>
+      <origin xyz="1.74216e-05 -0.0133229 -0.0449775" rpy="-2.48682 1.55043 0.651633"/>
+      <geometry>
+        <mesh filename="package://assets/merged/wirst_body_visual.stl"/>
+      </geometry>
+      <material name="wirst_body_parts_material">
+        <color rgba="0.0745098 0.678431 0.972549 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.74216e-05 -0.0133229 -0.0449775" rpy="-2.48682 1.55043 0.651633"/>
+      <geometry>
+        <mesh filename="package://assets/merged/wirst_body_collision.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link wrist_link -->
+  <link name="wrist_link">
+    <inertial>
+      <origin xyz="-2.16903e-18 -4.83311e-17 -0.00183593" rpy="0 0 0"/>
+      <mass value="0.0230672"/>
+      <inertia ixx="6.54736e-06" ixy="-2.51728e-23" ixz="-4.00656e-23" iyy="6.54736e-06" iyz="-5.94725e-24" izz="1.27521e-05"/>
+    </inertial>
+    <!-- Part wrist_link_parts -->
+    <visual>
+      <origin xyz="-2.1684e-18 0 -0.00183593" rpy="-1.56756 -0.0123485 -0.0161902"/>
+      <geometry>
+        <mesh filename="package://assets/merged/wrist_link_visual.stl"/>
+      </geometry>
+      <material name="wrist_link_parts_material">
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-2.1684e-18 0 -0.00183593" rpy="-1.56756 -0.0123485 -0.0161902"/>
+      <geometry>
+        <mesh filename="package://assets/merged/wrist_link_collision.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Frame toolpoint (dummy link + fixed joint) -->
+  <link name="toolpoint">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="toolpoint_frame" type="fixed">
+    <origin xyz="6.01645e-15 -3.66374e-14 -0.185923" rpy="-2.31486e-13 -2.82334e-14 2.83915e-14"/>
+    <parent link="wrist_link"/>
+    <child link="toolpoint"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Joint from wirst_body to wrist_link -->
+  <joint name="wrist_roll" type="revolute">
+    <origin xyz="2.22045e-16 -0.0314483 -0.0449775" rpy="-1.5708 1.5708 0"/>
+    <parent link="wirst_body"/>
+    <child link="wrist_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from flat_pattern_of_humerus_link to wirst_body -->
+  <joint name="wrist_pitch" type="revolute">
+    <origin xyz="1.77636e-15 -0.3937 0.0899558" rpy="1.67261e-15 -2.51166e-15 -1.23947e-15"/>
+    <parent link="flat_pattern_of_humerus_link"/>
+    <child link="wirst_body"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
+  </joint>
+  <!-- Joint from humerus_link to flat_pattern_of_humerus_link -->
+  <joint name="elbow_pitch" type="revolute">
+    <origin xyz="0.4572 0.031582 -0.067374" rpy="5.83832e-15 6.48493e-15 -3.14159"/>
+    <parent link="humerus_link"/>
+    <child link="flat_pattern_of_humerus_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.610865" upper="0.959931"/>
+  </joint>
+  <!-- Joint from base_platter to humerus_link -->
+  <joint name="base_pitch" type="revolute">
+    <origin xyz="-0.0204961 -7.37257e-18 -0.0851182" rpy="-3.14159 1.5708 0"/>
+    <parent link="base_platter"/>
+    <child link="humerus_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
+  </joint>
+  <!-- Joint from base_link to base_platter -->
+  <joint name="base_yaw" type="revolute">
+    <origin xyz="0.000390865 0.000967073 0.0809889" rpy="3.13835 -0.0161502 0.0124009"/>
+    <parent link="base_link"/>
+    <child link="base_platter"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+</robot>
