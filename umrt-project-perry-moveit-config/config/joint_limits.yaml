@@ -10,26 +10,26 @@ default_acceleration_scaling_factor: 0.1
 joint_limits:
   base_pitch:
     has_velocity_limits: true
-    max_velocity: 100.0
+    max_velocity: 1.0
     has_acceleration_limits: false
     max_acceleration: 0.0
   base_yaw:
     has_velocity_limits: true
-    max_velocity: 100.0
+    max_velocity: 1.0
     has_acceleration_limits: false
     max_acceleration: 0.0
   elbow_pitch:
     has_velocity_limits: true
-    max_velocity: 100.0
+    max_velocity: 1.0
     has_acceleration_limits: false
     max_acceleration: 0.0
   wrist_pitch:
     has_velocity_limits: true
-    max_velocity: 100.0
+    max_velocity: 1.0
     has_acceleration_limits: false
     max_acceleration: 0.0
   wrist_roll:
     has_velocity_limits: true
-    max_velocity: 100.0
+    max_velocity: 1.0
     has_acceleration_limits: false
     max_acceleration: 0.0

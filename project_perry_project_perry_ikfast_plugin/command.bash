@@ -1,0 +1,1 @@
+auto_create_ikfast_moveit_plugin.sh --iktype Rotation3D $MYROBOT_NAME.urdf project_perry ulna_link gripper_link
