@@ -34,7 +34,7 @@ configure_file(
 
 # INSTALL
 install(
-        DIRECTORY urdf rviz assets launch
+        DIRECTORY urdf rviz assets ros2_control launch
         DESTINATION share/${PROJECT_NAME}/
 )
 
