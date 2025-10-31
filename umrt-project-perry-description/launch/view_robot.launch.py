@@ -35,7 +35,7 @@ def generate_launch_description():
     declared_arguments.append(
         DeclareLaunchArgument(
             "description_file",
-            default_value="project_perry.urdf.xacro",
+            default_value="diffbot.urdf.xacro",
             description="URDF/XACRO description file with the robot.",
         )
     )
@@ -79,12 +79,12 @@ def generate_launch_description():
     robot_description = {"robot_description": robot_description_content}
 
     rviz_config_file = PathJoinSubstitution(
-        [FindPackageShare(description_package), "rviz", "project_perry_view.rviz"]
+        [FindPackageShare(description_package), "rviz", "diffbot_view.rviz"]
     )
 
     joint_state_publisher_node = Node(
-        package="joint_state_publisher_gui",
-        executable="joint_state_publisher_gui",
+        package="joint_state_publisher",
+        executable="joint_state_publisher",
         condition=IfCondition(gui),
     )
     robot_state_publisher_node = Node(

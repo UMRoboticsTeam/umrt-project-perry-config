@@ -13,7 +13,7 @@ One unusual technique used in this project, which is used to avoid complicating 
 
 # UMRT Project Perry Description
 
-This is the URDF and RViz files for the Project Perry robotics arm model.
+This is the URDF and RViz files for the Project Perry robotics arm and rover model.
 
 # UMRT Project Perry MoveIt Config
 
