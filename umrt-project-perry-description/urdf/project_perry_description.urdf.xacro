@@ -198,7 +198,8 @@
             <parent link="humerus_link"/>
             <child link="ulna_link"/>
             <axis xyz="0 0 1"/>
-            <limit effort="10" velocity="10" lower="-0.959931" upper="0.610865"/>
+            <!-- 40 degrees back, 40 degrees forward -->
+            <limit effort="10" velocity="10" lower="-0.6981317" upper="0.6981317"/>
         </joint>
         <!-- Joint from platter_link to humerus_link -->
         <joint name="base_pitch" type="revolute">
@@ -206,7 +207,8 @@
             <parent link="platter_link"/>
             <child link="humerus_link"/>
             <axis xyz="0 0 1"/>
-            <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
+            <!-- 30 degrees back, 70 degrees forward -->
+            <limit effort="10" velocity="10" lower="-0.5235" upper="1.22173"/>
         </joint>
         <!-- Joint from base_link to platter_link -->
         <joint name="base_yaw" type="revolute">
@@ -214,7 +216,8 @@
             <parent link="base_link"/>
             <child link="platter_link"/>
             <axis xyz="0 0 1"/>
-            <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+            <!-- 3 pi each way ==> three revolutions -->
+            <limit effort="10" velocity="10" lower="-9.42" upper="9.42"/>
         </joint>
 
     </xacro:macro>
