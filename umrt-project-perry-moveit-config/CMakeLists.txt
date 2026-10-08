@@ -5,6 +5,17 @@ find_package(ament_cmake REQUIRED)
 
 ament_package()
 
+# Parse version number from the file
+file(READ "version" version_input)
+string(REGEX MATCH "([0-9]+)\.([0-9]+)\.([0-9]+)" _ ${version_input})
+
+# Fill version number into package.xml
+configure_file(
+        package.in.xml
+        ${CMAKE_CURRENT_SOURCE_DIR}/package.xml
+        @ONLY
+)
+
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/launch")
   install(
     DIRECTORY launch
