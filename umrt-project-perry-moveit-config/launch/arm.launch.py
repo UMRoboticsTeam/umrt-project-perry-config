@@ -52,4 +52,23 @@ def generate_launch_description():
             ),
         )
     )
+
+    # Gripper (can-ppm): bridge ROS <-> CAN for the PPM gateway, and spawn its controller on the same
+    # controller_manager as the arm so both run together
+    ld.add_action(
+        Node(
+            package="ros2_j1939_babbler",
+            executable="static_bridge",
+            parameters=[{"sensor_name": "arm/babbler"}],
+            output="both",
+            remappings=[("/from_can_bus", "/arm/from_can_bus"), ("/to_can_bus", "/arm/to_can_bus")],
+        )
+    )
+    ld.add_action(
+        Node(
+            package="controller_manager",
+            executable="spawner",
+            arguments=["can_ppm_controller", "--controller-manager", "/controller_manager"],
+        )
+    )
     return ld
